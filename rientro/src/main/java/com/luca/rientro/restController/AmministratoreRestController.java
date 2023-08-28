@@ -18,6 +18,8 @@ import com.luca.rientro.service.AmministratoreService;
 @CrossOrigin(origins = "")
 public class AmministratoreRestController {
 
+	//servizio
+	
 	@Autowired
 	private AmministratoreService amministratoreService;
 	
