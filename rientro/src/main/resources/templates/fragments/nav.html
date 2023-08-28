@@ -1,0 +1,36 @@
+<header th:fragment="navbar" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://thymeleaf.org/extras/spring-security">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div>
+      		<a class="navbar-brand" href="/admin/">Home Page</a>
+      </div>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="menu">		    
+		<div>
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="/admin/registraAmministratore">
+						<span class="glyphicon glyphicon-plus"></span> Inserisci Amministratore
+					</a>
+				</li>
+				<li>
+					<a href="/admin/visualizzaStatistiche">
+						<span class="glyphicon glyphicon-stats"></span> Visualizza statistiche
+					</a>
+				</li>
+			</ul>
+		</div> 
+   	</div>
+  </div>
+</nav>
+</header>
+
+
+

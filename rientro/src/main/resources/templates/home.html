@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="fragments/cdn :: cdn">
+</head>
+<body>
+	<div th:insert="fragments/nav :: navbar"></div>
+	<div class="container">
+		<div class="jumbotron" style="margin-top: 50px;">
+			<header>
+				<h3 th:text="${'Amministratori (' + numeroAdmin + ')'}"></h3>
+			</header>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th style="width: 200px;">Username</th>
+						<th style="width: 200px;">Nome</th>
+						<th style="width: 200px;">Cognome</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="amministratore : ${amministratori}">
+						<td th:text="${amministratore.username}"></td>
+						<td th:text="${amministratore.nome}"></td>
+						<td th:text="${amministratore.cognome}"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+<footer th:include="fragments/footer :: footer"></footer>
+</body>
+</html>
